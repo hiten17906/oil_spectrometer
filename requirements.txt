@@ -1,0 +1,14 @@
+# requirements.txt — Oil Adulteration Spectrometer
+# Install inside a venv created with --system-site-packages:
+#   python3 -m venv venv --system-site-packages
+#   source venv/bin/activate
+#   pip install -r requirements.txt
+#
+# NOTE: RPi.GPIO is intentionally excluded — not supported on Raspberry Pi 5.
+# GPIO is handled via lgpio (system package, accessed via --system-site-packages).
+
+sparkfun-qwiic-as7265x
+pillow
+numpy
+spidev
+lgpio
